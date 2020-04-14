@@ -28,11 +28,12 @@ Use the following command for repeat playback.
 
 
 ```
-rosbag play -l simonpic_test_200414.bag
+rosbag play -l assets/simonpic_test_200414.bag
 ```
 
 
-and you can see image in the rosbag using rqt_image_view package
+and you can see image in the rosbag using rqt_image_view package  
+
 ![](assets/simonpic_test.gif)
 
 
