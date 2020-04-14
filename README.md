@@ -1,11 +1,11 @@
 TF2 Broadcaster for KIST Environment between Simonpic and Silbot
 ===========================================================
 
-## Description
+## 1. Description
 
 Connecting package between /map(silbot's coordinate system)and /simonpic(simonpic's coordinate system)
 
-## Guidance for Anastasiya
+## 2. Guidance for Anastasiya
 
 Kist_tf2 pakcage in this repository is a previous version of our environment.  
 
