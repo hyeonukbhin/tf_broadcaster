@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+  <launch>
+    <!-- Turtlesim Node -->
+    <node pkg="turtlesim" type="turtlesim_node" name="sim"/>
+    <node pkg="turtlesim" type="turtle_teleop_key" name="teleop" output="screen"/>
+
+    <!-- ros_realsense -->
+    <include file="$(find ros_realsense)/launch/realsense_camera.launch"/>
+
+    <!-- aruco_ros -->
+		<include file="$(find aruco_ros)/launch/single.launch"/>
+
+    <!-- Turtlesim Node -->
+    <node pkg="waffle_object" type="waffle_object_br_node" name="waffle_object_br"/>
+		<node pkg="waffle_object" type="waffle_object_lis_node" name="waffle_object_lis"/>
+
+	  <!-- Rviz -->
+	  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find waffle_object)/launch/config.rviz"/>
+
+	  <!-- map server -->
+	  <node pkg="map_server" type="map_server" name="map_server" args="$(find waffle_object)/map/map.yaml"/>
+
+	  <!-- rqt_image_viewer -->
+	  <node pkg="rqt_image_view" type="rqt_image_view" name="rgb" args="/realsense/rgb/image_raw"/>
+
+
+  </launch>

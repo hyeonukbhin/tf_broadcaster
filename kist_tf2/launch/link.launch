@@ -1,0 +1,15 @@
+<launch>
+
+  <!--State-->
+  <param name="robot_description" command="$(find xacro)/xacro '$(find waffle)/urdf/turtlebot3_waffle.urdf.xacro'"/>
+  <node pkg="robot_state_publisher" type="robot_state_publisher" name="state_publisher" output="screen"/>
+
+  <!--Topic-->
+  <node pkg="waffle" type="core_publisher.py" name="core_publisher" output="screen">
+    <remap from="odom_in" to="odom_waffle"/>
+    <remap from="odom_out" to="odom"/>
+    <remap from="imu_in" to="imu_waffle"/>
+    <remap from="imu_out" to="imu"/>
+  </node>
+
+</launch>

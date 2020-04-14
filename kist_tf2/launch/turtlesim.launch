@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+  <launch>
+
+    <!-- Turtlesim Node-->
+    <node pkg="turtlesim" type="turtlesim_node" name="sim"/>
+
+    <!-- ros_realsense -->
+    <include file="$(find ros_realsense)/launch/realsense_camera.launch"/>
+    
+    <!-- aruco_ros -->
+		<include file="$(find aruco_ros)/launch/single.launch"/>
+
+    <!-- Navigation -->
+		<include file="$(find turtlebot3_navigation)/launch/turtlebot3_navigation.launch"/>
+
+	  <!-- Rviz -->
+	  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find waffle_object)/launch/config.rviz"/>
+
+	  <!-- rqt_image_viewer -->
+	  <node pkg="rqt_image_view" type="rqt_image_view" name="rgb" args="/aruco_single/result"/>
+
+    <!-- Teleop-->
+    <node pkg="turtlebot3_teleop" type="turtlebot3_teleop_key" name="teleop_key" output="screen"/>
+
+    <!-- TF -->
+    <node pkg="waffle_object" type="waffle_object_br_node" name="waffle_object_br"/>
+
+  </launch>
