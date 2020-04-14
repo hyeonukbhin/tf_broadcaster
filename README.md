@@ -30,20 +30,20 @@ Use the following command for repeat playback.
 rosbag play -l simonpic_test_200414.bag
 '''
 and you can see image in the rosbag using rqt_image_view package
-[Link](assets/simonpic_test.gif)
+![](assets/simonpic_test.gif)
 
 
 ## 3. Reference
-[Link](http://wiki.ros.org/tf2/Tutorials, "ROS TF2 Tutorials").
+- ["ROS TF2 Tutorials"](http://wiki.ros.org/tf2/Tutorials).
 
-[Link](http://wiki.ros.org/tf2/Tutorials/Writing%20a%20tf2%20static%20broadcaster%20%28Python%29, "Writing a tf2 static broadcaster (Python)")
+- [Writing a tf2 static broadcaster (Python)](http://wiki.ros.org/tf2/Tutorials/Writing%20a%20tf2%20static%20broadcaster%20%28Python%29)
 This tutorial teaches you how to broadcast static coordinate frames to tf2
 
-[Link](http://wiki.ros.org/tf2/Tutorials/Writing%20a%20tf2%20listener%20%28Python%29, "Writing a tf2 listener (Python)")
+- [Writing a tf2 listener (Python)](http://wiki.ros.org/tf2/Tutorials/Writing%20a%20tf2%20listener%20%28Python%29)
 This tutorial teaches you how to use tf2 to get access to frame transformations.
 
-[Link](http://wiki.ros.org/tf2/Tutorials/Writing%20a%20tf2%20static%20broadcaster%20%28C%2B%2B%29, "Writing a tf2 static broadcaster (C++)")
+- [Writing a tf2 static broadcaster (C++)](http://wiki.ros.org/tf2/Tutorials/Writing%20a%20tf2%20static%20broadcaster%20%28C%2B%2B%29)
 This tutorial teaches you how to broadcast static coordinate frames to tf2
 
-[Link1](http://wiki.ros.org/tf2/Tutorials/Writing%20a%20tf2%20listener%20%28C%2B%2B%29, "Writing a tf2 listener (C++)")
+- [Writing a tf2 listener (C++)](http://wiki.ros.org/tf2/Tutorials/Writing%20a%20tf2%20listener%20%28C%2B%2B%29)
 This tutorial teaches you how to use tf2 to get access to frame transformations.
